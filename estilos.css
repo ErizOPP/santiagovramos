@@ -5,7 +5,7 @@ body {
 #principal {
     width: 80%;
     max-width: 950px;
-    min-width: 450px;
+    min-width: 550px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 8%;
@@ -13,7 +13,6 @@ body {
     animation: cambio-color 5s infinite;
     backdrop-filter: blur(1px); /* aplicar un efecto de desenfoque */
 }
-
 	@keyframes cambio-color {
   0% {
     box-shadow: 0px 0px 15px #ffffff;
@@ -42,7 +41,7 @@ body {
 }
 
 #fila-2-trabajo {
-    padding-top: 80px;
+    padding-top: 40px;
     text-align: center;
 }
 
@@ -64,9 +63,7 @@ body {
 }
 
 #contenedor-tp {
-    text-shadow: 0px 0px;
-    padding-bottom: 0px;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 60px;
     margin-right: 1%;
     text-align: center;
@@ -77,11 +74,11 @@ body {
     border-radius: 50px;
     animation: cambio-color 5s infinite;
     height: 180px;
-    transition: all .5s ease;
+    transition: 1s linear;
 }
 
 #columna-foto:hover {
-     opacity: 0%;
+     scale: 0%;
 }
 
 #columna-nombre {
@@ -96,7 +93,7 @@ body {
     margin-right: 3%;
     margin-top: 6px;
     margin-bottom: 5px;
-    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .ico:hover{
@@ -107,9 +104,14 @@ body {
     margin-bottom: 100px;
 }
 
+#fila-3{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
 .btn {
     margin-left: 5%;
-    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 10%;
 	display: inline-block;
 }
@@ -137,9 +139,8 @@ body {
 .btn1:hover {
 	content: "";
 	background-image: url('elementos/boton-hover/Group 1.png');
-    scale: 1.1;
-    rotate: 20;
 }
+
 /*.btn2:hover {
 	content: "";
 	background-image: url('elementos/boton-hover/Group 2.png');
@@ -153,18 +154,22 @@ body {
 	background-image: url('elementos/boton-hover/Group 4.png');
 }*/
 
+#fila-5{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
 #footer {
-    display: inline-block;
     padding-top: 8px;
     padding-bottom: 8px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    overflow: hidden;
     background-color: #5DDDE5;
     position: fixed;
     bottom: 0;
     width: 50%;
-    margin-left: 25%;
+    max-width: 650px;
+    min-width: 450px;
     box-shadow: 0px 0px 20px #00000075;
     text-align: center;
     color: #FFFFFF;
