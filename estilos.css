@@ -1,13 +1,15 @@
 #principal {
     width: 80%;
     max-width: 950px;
-    min-width: 450px;
+    min-width: 460px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
     border-radius: 50px;
     animation: cambio-color 5s infinite;
     backdrop-filter: blur(1px); /* aplicar un efecto de desenfoque */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 }
 
 	@keyframes cambio-color {
@@ -32,6 +34,8 @@
     padding-top: 30px;
     text-align: right;
     max-height: none;
+    font-size: 18pt;
+    font-weight: 100;
 }
 
 #columna-foto {
@@ -39,29 +43,27 @@
     border-radius: 50px;
     animation: cambio-color 5s infinite;
     height: 180px;
-    transition: all .5s ease;
-}
-
-#columna-foto:hover {
-     opacity: 0%;
 }
 
 #columna-nombre {
     float: left;
     padding-top: 25px;
     padding-left: 30px;
+    font-size: 32pt;
+    margin-bottom: 20px;
 }
 
 #fila-2-trabajo {
     padding-top: 40px;
     text-align: center;
+    font-size: 30px;
 }
 
 #contenedor-tp {
     margin-right: 8%;
     margin-left: 8%;
     margin-bottom: 10%;
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -80,43 +82,35 @@
 }
 
 .btn1 {
-    content: "";
     background-image: url('elementos/boton/Group 1.png');
     transition: all .5s ease;
 }
 .btn2 {
-    content: "";
     background-image: url('elementos/boton-disable/Group-disable 2.png');
     transition: all .5s ease;
 }
 .btn3 {
-    content: "";
     background-image: url('elementos/boton-disable/Group-disable 3.png');
     transition: all .5s ease;
 }
 .btn4 {
-    content: "";
     background-image: url('elementos/boton-disable/Group-disable 4.png');
     transition: all .5s ease;
 }
 .btn1:hover {
-	content: "";
 	background-image: url('elementos/boton-hover/Group 1.png');
     scale: 1.1;
 }
 /*
 .btn2:hover {
-	content: "";
 	background-image: url('elementos/boton-hover/Group 2.png');
     scale: 1.1;
 }
 .btn3:hover {
-	content: "";
 	background-image: url('elementos/boton-hover/Group 3.png');
     scale: 1.1;
 }
 .btn4:hover {
-	content: "";
 	background-image: url('elementos/boton-hover/Group 4.png');
     scale: 1.1;
 } 
@@ -167,7 +161,7 @@
 } 
 
 .darkModeSwitch{
-    background: #ffffff;
+    background: #3a3a3a;
     display:flex;
     position: relative;
     cursor: pointer;
@@ -180,42 +174,47 @@
 }
 
 .darkModeSwitch span{
-    width:32px;
-    height:38px;
+    width:26px;
+    height:34px;
 }
 
 .darkModeSwitch::after{
-    background: rgba(0, 0, 139, 0);
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 34px;
+    height: 34px;
     position: absolute;
-    top:0;
-    left:0;
+    top: 1px;
+    left: 2px;
     right:unset;
     border-radius: 3rem;
     transition: all .5s ease;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 5px 2px #FFFFFF;
     content: "";
 }
 
 .darkModeSwitch.active{
-    background: #3494b1;
+    background: #ffffff;
   }
 
   .darkModeSwitch.active::after{
     left:unset;
-    right:0;
+    right:0px;
+	box-shadow: 0 0 5px 2px #3a3a3a;
   }
 
   body {
 	background-image: url(elementos/imagen%20para%20pattern.png);
     transition: 1s ;
 }
-  body.dark{
+  body.dark {
     background-image: url(elementos/imagen\ para\ pattern\ -\ white.jpg);
   }
 
-#principal.dark{
-    background-color: #000000;
+  body.dark #principal {
+    background-color: #00000020;
+    transition: 1s ;
+    color: #3a3a3a;
   }
-
+  body.dark #contenedor-redes {
+    background-color: #3a3a3a;
+    transition: 1s ;
+  }
